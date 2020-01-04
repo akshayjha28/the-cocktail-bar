@@ -39,9 +39,13 @@
 .cards-aside {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  right: 12px;
-  top: 46%;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  @media (min-width: 768px) {
+    position: fixed;
+    top: 48%;
+  }
   img {
     cursor: pointer;
     border-radius: 12px;
@@ -77,7 +81,13 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     border-radius: 2px;
     perspective: 1000px;
-    height: 462px;
+    height: 456px;
+    @media (min-width: 768px) and (max-width: 997px) {
+      height: 252px;
+    }
+    @media (min-width: 998px) and (max-width: 1199px) {
+      height: 372px;
+    }
     margin: 20px 20px 40px 20px;
     cursor: pointer;
     .card-canvas-inner {
@@ -97,6 +107,23 @@
     &.opened-card-true {
       .card-canvas-inner {
         transform: rotateY( 180deg );
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 997px) {
+      height: 252px;
+      .card-canvas-inner {
+        .card-article {
+          font-size: 12px;
+        }
+      }
+    }
+    @media (min-width: 998px) and (max-width: 1199px) {
+      height: 372px;
+      .card-canvas-inner {
+        .card-article {
+          font-size: 16px;
+        }
       }
     }
   }
