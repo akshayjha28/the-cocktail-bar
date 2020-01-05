@@ -8,7 +8,7 @@ class Fetch {
 			const response = await fetch(url, { headers: { [`secret-key`]: SECRET_KEY } });
 			return response.json();
 		} catch(err) {
-			throw new Error(`Error in getting from ${url}`);
+			throw new Error(`Error in getting from ${url} due to ${JSON.stringify(err)}`);
 		}
 	}
 }
