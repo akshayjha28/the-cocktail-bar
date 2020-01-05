@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React  from 'react';
 
-class Aside extends Component {
+const Aside = (props) => {
 
-	render() {
-		return <aside className="cards-aside">
-			<i className="material-icons" onClick={this.props.reset} title="Refresh">cached</i>
-			<i className="material-icons" onClick={this.props.shuffle} title="Shuffle">shuffle</i>
-		</aside>
-	}
-}
+	return <aside className="cards-aside">
+		<i className="material-icons" onClick={props.reset} title="Refresh">cached</i>
+		<i className="material-icons" onClick={props.shuffle} title="Shuffle">shuffle</i>
+	</aside>
+};
 
 export default Aside;
