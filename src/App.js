@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import './App.scss';
-import Cards from './Cards';
+import Cards from './components/Cards';
 
 class App extends Component {
 

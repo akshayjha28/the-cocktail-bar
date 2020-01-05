@@ -4,8 +4,8 @@ class Aside extends Component {
 
 	render() {
 		return <aside className="cards-aside">
-			<img src="https://img.icons8.com/officel/40/000000/refresh.png" onClick={this.props.reset} alt="refresh"/>
-			<img src="https://img.icons8.com/office/40/000000/shuffle.png" onClick={this.props.shuffle} alt="shuffle"/>
+			<i className="material-icons" onClick={this.props.reset} title="Refresh">cached</i>
+			<i className="material-icons" onClick={this.props.shuffle} title="Shuffle">shuffle</i>
 		</aside>
 	}
 }
