@@ -5,7 +5,7 @@ import App from './App';
 import Fetch from './Fetch';
 import * as serviceWorker from './serviceWorker';
 
-const url = `https://api.jsonbin.io/b/5e0f4b9536e70a49dc66bb8e/1`;
+const url = `https://api.jsonbin.io/b/5e0f4b9536e70a49dc66bb8e/2`;
 
 (async () => {
 

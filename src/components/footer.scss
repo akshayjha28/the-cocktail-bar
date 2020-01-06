@@ -1,0 +1,14 @@
+.cocktail-footer {
+  background: white;
+  padding: 8px;
+  text-align: center;
+  @media (min-width: 768px) {
+    position: fixed;
+    bottom: 0;
+  }
+  width: 100%;
+  a {
+    margin: 0 auto;
+    font-size: 16px;
+  }
+}
